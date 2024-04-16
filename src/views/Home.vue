@@ -139,11 +139,6 @@ onMounted(async () => {
   await setupIndexedDB();
   loadSessions();
 });
-
-// on unmounted, clear the interval
-onUnmounted(() => {
-  clearInterval(interval);
-});
 </script>
 
 <style scoped>
